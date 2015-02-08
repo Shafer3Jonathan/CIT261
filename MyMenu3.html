@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Chore Tracker</title>
+
+	<link rel="stylesheet" href="css/MyStyles2.css" media="screen">
+	<style type="text/css">
+		html, body { margin: 0;	padding: 0; }
+		body { margin: 5px; background: #f2f2f2 url(img/bg.png) no-repeat top center; }
+		ul.menu { margin: 0px auto 0 auto; }
+	</style>
+<meta name="robots" content="noindex,follow" />
+</head>
+
+<body>
+
+<ul class="menu">
+
+	<li><a href="#">Home</a></li>
+	<li><a href="#">Chores</a></li>
+	<li><a href="#">Reports</a>
+
+		<ul>
+			<li><a href="#" class="documents">Charts</a></li>
+			<li><a href="#" class="messages">Graphs</a></li>
+			<li><a href="#" class="signout">Summary</a></li>
+		</ul>
+
+	</li>
+	<li><a href="#">Account Settings</a></li>
+	<li><a href="#">Sign Out</a></li>
+
+</ul> <!-- end .menu -->
+<p>Todays Date:</p>
+<p id="TodayDate">
+<script>
+var d = new Date();
+document.getElementById("TodayDate").innerHTML = d.getFullYear();
+</script>
+</p>
+
+</body>
+
+</html>
