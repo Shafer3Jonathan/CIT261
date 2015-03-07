@@ -23,7 +23,7 @@
 
 <ul class="menu">
 
-	<li><a href="#" id="to">hi</a></li>
+	<li><a href="#" id="menu1"></a></li>
 	<li><a href="#">chores</a></li>
 	<li><a href="#">Reports</a>
 
@@ -59,9 +59,10 @@ xmlhttp.open("GET","note.xml",false);
 xmlhttp.send();
 xmlDoc=xmlhttp.responseXML;
 
-document.getElementById("to").innerHTML=
+document.getElementById("menu1").innerHTML=
 xmlDoc.getElementsByTagName("to")[0].childNodes[0].nodeValue;
-
+document.getElementById("menu1").innerHTML=
+xmlDoc.getElementsByTagName("from")[1].childNodes[1].nodeValue;
 </script>
 </body>
 

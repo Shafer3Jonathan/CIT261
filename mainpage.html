@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Coin Tracker</title>
+
+	<link rel="stylesheet" href="css/themes/my-custom-theme.css" />
+   <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />	
+
+</head>
+<body>
+        <!-- ----------------------------------------------------------- -->
+	<section id="home" data-role="page" data-title="CoinTracker | Home" data-theme="d">
+		<header data-role="header" data-position="fixed">			
+			<h1>Coin Tracker<br>Main Menu Page</h1>
+		</header>
+		<article data-role="main" class="ui-content">
+		<header align="center">
+			<img src="http://fc00.deviantart.net/fs71/f/2013/086/6/a/welcome_sign_by_tsuyoiurufu-d5zfar8.png" width="220" alt="welcom image" >
+		</header>			
+			<ul data-role="listview" data-inset="true">
+				<li>
+					<a href="expense.html" rel="external">
+						<img src="http://enterprise360.co.uk/wp-content/themes/Enterprise360/images/expenses.png" alt="expense image">
+						<h2>Expenses</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, dignissimos.</p>
+					</a>
+				</li>
+				<li>
+					<a href="income.html" rel="external">
+						<img src="http://www.mariowiki.com/images/thumb/1/17/CoinMK8.png/150px-CoinMK8.png" alt="income image">
+						<h2>Incomes</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, dignissimos.</p>
+					</a>
+				</li>
+				<li>
+					<a href="#reports">
+						<img src="http://images.clipartpanda.com/notebook-clipart-spiral-notebook-md.png" alt="report image">
+						<h2>Reports</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, dignissimos.</p>
+					</a>
+				</li>
+				<li>
+					<a href="#setup">
+						<img src="https://cdn4.iconfinder.com/data/icons/imod/512/Hardware/pignon.png" alt="setup image">
+						<h2>Setup</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, dignissimos.</p>
+					</a>
+				</li>
+			</ul>	
+		</article>
+		<footer data-role="footer" data-position="fixed">
+			<h3>&copy; Henry Diaz 2015</h3>
+		</footer>
+	</section><!-- End page 1  -->
+
+	<!-- ----------------------------------------------------------- -->
+	<section id="reports" data-role="page" data-title="CoinTracker | Home" data-theme="d">
+		<header data-role="header" data-position="fixed">			
+			<h1>Coin Tracker<br>Main Menu Page</h1>
+		</header>
+		<article data-role="main" class="ui-content">
+			<header data-role="header" data-position="fixed">			
+				<h1>Coin Tracker<br>Setting's Page</h1>
+				<a href="#home" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
+				<nav data-role="navbar">
+					<ul>
+						<li><a href="income.html" rel="external" data-transition="flow" data-icon="arrow-u">Incomes</a></li>
+						<li><a href="#reports" data-transition="pop" data-icon="bullets">Report</a></li>
+						<li><a href="expense.html" rel="external" data-transition="pop" data-icon="arrow-d">Expenses</a></li>
+					</ul>
+				</nav>
+			</header>			
+			<ul data-role="listview" data-inset="true">
+				<li>
+					<a href="#list">
+						<img src="http://images.clipartpanda.com/notebook-clipart-spiral-notebook-md.png" alt="report image">
+						<h2>List Reports</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, dignissimos.</p>
+					</a>
+				</li>
+				<li>
+					<a href="#pie">
+						<img src="http://www.graphicsfuel.com/wp-content/uploads/2011/11/pie-chart-512.png" alt="setup image">
+						<h2>Pie Report</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, dignissimos.</p>
+					</a>
+				</li>
+				<li>
+					<a href="#barra">
+						<img src="http://transitionalsolutions.ca/wp/wp-content/uploads/2014/10/bar_graph-lg.png" alt="report image">
+						<h2>Bar Chart Report</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, dignissimos.</p>
+					</a>
+				</li>
+			</ul>	
+		</article>
+		<footer data-role="footer" data-position="fixed">
+			<h3>&copy; Henry Diaz 2015</h3>
+		</footer>
+	</section><!-- End page 1  -->
+
+	<!-- ----------------------------------------------------------- -->
+	<section id="pie" data-role="page" data-title="CoinTracker | Report" data-theme="d">
+		<header data-role="header" data-position="fixed">			
+			<h1>Coin Tracker<br>Report's Generator</h1>
+			<a href="#home" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
+			<a href="#setup" class="ui-btn ui-corner-all ui-shadow ui-icon-edit ui-btn-icon-right">Setup</a>
+			<nav data-role="navbar">
+				<ul>
+					<li><a href="income.html" data-transition="flow" data-icon="arrow-u">Incomes</a></li>					
+					<li><a href="expense.html" data-transition="pop" data-icon="arrow-d">Expenses</a></li>
+				</ul>
+			</nav>
+		</header>
+		<article data-role="main" class="ui-content">
+			<h2>Reports</h2>
+			<label for="select" class="select">Period:</label>
+			<select id="select" name="select">
+				<option value="value1">Jan</option>
+				<option value="value2">Feb</option>
+				<option value="value3">Mar</option>
+			</select>
+			<label for="select" class="select">Report type:</label>
+			<select id="select" name="select">
+				<option value="value1">Bar Chart</option>
+				<option value="value2">Pie Chart</option>
+				<option value="value3">Document</option>
+			</select>
+			<label for="select" class="select">Transactions:</label>
+			<select id="select" name="select">
+				<option value="value1">Incomes</option>
+				<option value="value2">Expenses</option>
+				<option value="value3">Both</option>
+			</select>
+			<div align="center">
+				<a href="#pie-report" data-role="button" data-icon="search" data-iconpos="top" data-transition="pop">View</a>
+			</div>						
+
+		</article>
+		<footer data-role="footer" data-position="fixed">
+			<h3>&copy; Henry Diaz 2015</h3>
+		</footer>
+	</section><!-- End page 1  -->
+
+	<section data-role="page" id="pie-report" data-dialog="true">
+	  <main data-role="main" class="ui-content">
+		  <h3>Monthly Report<br>January Pie Chart</h3>
+		    <p>The buttons below are for demonstration purposes only.</p>
+		    <img src="http://www.fishbowlinventory.com/w/images/7/71/Gross_Sales_By_Product_Pie_Chart_Report.png" alt="pie report"><br>
+		    <a href="#" class="ui-btn ui-btn-inline ui-btn-b ui-shadow ui-corner-all ui-icon-check ui-btn-icon-left ui-btn-inline ui-mini" data-rel="back">Download</a>
+		    <a href="#" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-inline ui-mini" data-rel="back">Cancel</a>
+	  </main>
+  </section>
+
+	<!-- ----------------------------------------------------------- -->
+	<section id="setup" data-role="page" data-title="CoinTracker | Settings" data-theme="d">
+		<header data-role="header" data-position="fixed">			
+			<h1>Coin Tracker<br>Setting's Page</h1>
+			<a href="#home" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
+			<nav data-role="navbar">
+				<ul>
+					<li><a href="income.html" rel="external" data-transition="flow" data-icon="arrow-u">Incomes</a></li>
+					<li><a href="#reports" data-transition="pop" data-icon="bullets">Report</a></li>
+					<li><a href="expense.html" rel="external" data-transition="pop" data-icon="arrow-d">Expenses</a></li>
+				</ul>
+			</nav>
+		</header>
+		<article data-role="main" class="ui-content">
+			<h2>SETUP</h2>
+			<label for="select" class="select">Category:</label>
+			<select id="select" name="select">
+				<option value="value1">Food</option>
+				<option value="value2">Bills</option>
+				<option value="value3">Fun</option>
+			</select>
+			<label for="select" class="select">Providor:</label>
+			<select id="select" name="select">
+				<option value="value1">Grocery 1</option>
+				<option value="value2">SuperMarket 2</option>
+				<option value="value3">PizzaHut</option>
+			</select>
+			<div data-role="fieldcontain">
+				<label for="numberBox">Amount</label>
+				<input type="number" name="numberBox" id="numberBox" value="$" />
+			</div>
+			<div class="ui-grid-a">
+				<div class="ui-block-a">
+					<button class="ui-btn ui-corner-all ui-btn-icon-left ui-btn-a ui-icon-check">Save</button>
+				</div>
+				<div class="ui-block-b">
+					<button class="ui-btn ui-corner-all ui-btn-icon-right ui-btn-a ui-icon-delete">Cancel</button>
+				</div>						
+			</div>	
+		</article>
+		<footer data-role="footer" data-position="fixed">
+			<h3>&copy; Henry Diaz 2015</h3>
+		</footer>
+	</section><!-- End page 1  -->
+
+	<!-- ----------------------------------------------------------- -->
+	<section id="list" data-role="page" data-title="CoinTracker | Settings" data-theme="d">
+		<header data-role="header" data-position="fixed">			
+			<h1>Coin Tracker<br>Registros Page</h1>
+			<a href="#home" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
+			<nav data-role="navbar">
+				<ul>
+					<li><a href="income.html" rel="external" data-transition="flow" data-icon="arrow-u">Incomes</a></li>
+					<li><a href="#reports" data-transition="pop" data-icon="bullets">Report</a></li>
+					<li><a href="expense.html" rel="external" data-transition="pop" data-icon="arrow-d">Expenses</a></li>
+				</ul>
+			</nav>
+		</header>
+		<article data-role="main" class="ui-content">
+			<h2>List</h2>
+
+      <form id="transactions-form" role="form" style="display:none;">
+
+         <input type="button" class="btn btn-primary" id="transactions-op-discard" value="Discard">
+         <input type="submit" class="field" id="transactions-op-save" value="Save">
+         <input type="hidden" class="btn btn-primary" id="id_entry" value="0">
+         <!-- <input type="hidden" class="btn btn-primary" id="date" value="nose"> -->
+      </form>
+			<table id="transactions-table">
+         <tr id="transactions-head">
+            <th>ID</th>
+            <th>Type</th>
+            <th>Category</th>
+            <th>Item</th>
+            <th>Amount</th>
+            <th>Date</th>
+            <th>Comments</th>
+         </tr>
+      	</table>
+		</article>
+		<footer data-role="footer" data-position="fixed">
+			<h3>&copy; Henry Diaz 2015</h3>
+		</footer>
+	</section><!-- End page 1  -->
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

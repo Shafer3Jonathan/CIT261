@@ -1,0 +1,39 @@
+<html>
+<head>
+<style> 
+#myimg:hover {
+    margin: auto;
+    border: 1px solid black;
+    -webkit-animation: mymove 20s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 20s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    50% {-webkit-transform: rotate(360deg);}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    50% {transform: rotate(360deg);}
+}
+</style>
+<script type="text/javascript">
+<!--
+function popup() {
+	document.getElementById("outputarea").innerHTML= "The click event changed the DOM<br />Try hovering over the picture<br /><img id='myimg' src='src/kittenpraying.jpg'>"
+}
+function popup2() {
+	document.getElementById("outputarea").innerHTML= "The hover event changed the DOM<br />Try hovering over the picture<br /><img id='myimg' src='src/kittenpraying.jpg'>"
+}
+//-->
+</script>
+</head>
+<body>
+<p id="outputarea">Hi this is example of DOM event Manipulation</p>
+<input type="button" value="Click Me!" onclick="popup()"><br />
+<a href="#" onmouseover="" onMouseout="popup2()">
+Hover Me!</a>
+
+</body>
+</html>
